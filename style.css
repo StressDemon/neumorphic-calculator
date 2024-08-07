@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    --shadow: #161b1d3b;
+    --shadow1: #FAFBFF;
+    --shadow2: #161b1d3b;
     background-color: aliceblue;
     display: grid;
     place-items: center;
@@ -12,7 +13,7 @@ body {
 .calculator {
     width: 300px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--shadow);
+    box-shadow: -5px -5px 10px var(--shadow1), 5px 5px 10px var(--shadow2);
     display: grid;
     place-items: center;
     padding: 1rem;
@@ -22,7 +23,7 @@ body {
     border-radius: 10px;
     width: 90%;
     height: 60px;
-    box-shadow: inset 5px 5px 10px var(--shadow);
+    box-shadow: inset -5px -5px 10px var(--shadow1), inset 5px 5px 10px var(--shadow2);
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3rem;
@@ -40,7 +41,7 @@ body {
 .calc-button {
     width: 50px;
     height: 50px;
-    box-shadow: 5px 5px 10px var(--shadow);
+    box-shadow: -5px -5px 10px var(--shadow1), 5px 5px 10px var(--shadow2);
     margin: .7rem;
     border-radius: 10px;
     user-select: none;
@@ -48,6 +49,7 @@ body {
     place-items: center;
     font-weight: 600;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .row .calc-button:last-child{
@@ -55,7 +57,7 @@ body {
 }
 
 .calc-button:active {
-    box-shadow: inset 5px 5px 10px var(--shadow);
+    box-shadow: inset -5px -5px 10px var(--shadow1), inset 5px 5px 10px var(--shadow2);
 }
 
 .calc-button.double-sized {
